@@ -1,11 +1,11 @@
-import * as Person from "./src/person";
+import * as Tsl from "./src";
 
-function greeter(val: Person.iface.IPerson): string {
+function greeter(val: Tsl.IPerson): string {
     return val.hello();
 }
 
-const p: Person.cls.Person = new Person.cls.Person();
+const p: Tsl.Person = new Tsl.Person();
 
-p.setName("richard").setAge(20).setSex(Person.cls.Sex.man);
+p.setName("richard").setAge(20).setSex(Tsl.Sex.man);
 
 console.log(greeter(p));

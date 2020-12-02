@@ -1,5 +1,5 @@
 
-import { IPerson } from "../iface/IPerson"
+import { IPerson } from "./IPerson"
 import { Sex } from "./Sex"
 
 export class Person implements IPerson {

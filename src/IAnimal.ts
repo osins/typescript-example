@@ -1,4 +1,4 @@
-import { Sex } from "../cls/Sex"
+import { Sex } from "./Sex"
 
 export interface IAnimal {
     name: string;
