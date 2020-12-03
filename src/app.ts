@@ -1,10 +1,15 @@
 import { Sex } from "./Person/Sex";
 import { Person } from "./Person/Person";
 
-namespace globalLib {
+namespace TeApi {
     export class base {
-        version: string
+        version: string = "0.0.1"
         options: { [key: string]: any }
+
+        showVersion(): void {
+            console.log(`This is teApi, Version: ${this.version}`)
+        }
+
         doSomething(): void {
             const p: Person = new Person();
 
@@ -16,11 +21,5 @@ namespace globalLib {
     }
 }
 
-let base: globalLib.base = new globalLib.base;
-base.doSomething();
-
-function test() {
-    console.log("this is a test.");
-}
-
-test();
+export let teBase: TeApi.base = new TeApi.base();
+teBase.showVersion();

@@ -1,4 +1,4 @@
-declare namespace globalLib {
+declare namespace teApi {
     interface Options {
         [key: string]: any
     }
@@ -8,3 +8,5 @@ declare namespace globalLib {
         doSomething(): void
     }
 }
+
+declare var teBase: teApi.base;
