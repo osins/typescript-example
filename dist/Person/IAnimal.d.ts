@@ -1,5 +1,4 @@
-import { Sex } from "./Sex"
-
+import { Sex } from "/Sex";
 export interface IAnimal {
     name: string;
     age: number;

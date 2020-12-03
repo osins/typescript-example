@@ -1,6 +1,10 @@
-declare namespace TSO {
-    export interface Base {
+declare namespace globalLib {
+    interface Options {
+        [key: string]: any
+    }
+    interface base {
+        version: string
+        options: Options
+        doSomething(): void
     }
 }
-
-declare var tso: TSO.Base;

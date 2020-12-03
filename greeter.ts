@@ -8,4 +8,4 @@ const p: Tsl.Person = new Tsl.Person();
 
 p.setName("richard").setAge(20).setSex(Tsl.Sex.man);
 
-console.log(greeter(p));
+console.log(tso.greeter());
